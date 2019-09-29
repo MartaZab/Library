@@ -7,19 +7,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="380bb4b7-4a0a-4d45-8251-fa822c0727b7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/persistence/src/main/java/repository/AuthorRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/persistence/src/main/java/repository/BorrowerRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/persistence/src/main/resources/import.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/main/java/services/BookService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/servlets/EditServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/servlets/HomeServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/src/main/java/services/AuthorService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/src/main/java/services/BorrowerService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/book/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/book/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/persistence/src/main/java/repository/EntityManagerUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/persistence/src/main/java/repository/EntityManagerUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/persistence/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/persistence/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/addBook.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/webapp/addBook.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/editBook.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/webapp/editBook.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/book/Borrower.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/book/Borrower.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/book/BorrowerDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/book/BorrowerDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/servlets/HomeServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/servlets/HomeServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/webapp/index.jsp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -60,7 +53,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../libary-api" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../SQL/hibernate-project-entitymanager" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -196,7 +189,7 @@
       <workItem from="1569655266624" duration="951000" />
       <workItem from="1569656324223" duration="17266000" />
       <workItem from="1569700407909" duration="1248000" />
-      <workItem from="1569741525601" duration="11850000" />
+      <workItem from="1569741525601" duration="16574000" />
     </task>
     <task id="LOCAL-00001" summary="add relations to entity">
       <created>1569664087832</created>
@@ -212,7 +205,14 @@
       <option name="project" value="LOCAL" />
       <updated>1569744847650</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add import.sql, add service">
+      <created>1569755798278</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1569755798279</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -234,7 +234,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add relations to entity" />
     <MESSAGE value="update project" />
-    <option name="LAST_COMMIT_MESSAGE" value="update project" />
+    <MESSAGE value="add import.sql, add service" />
+    <option name="LAST_COMMIT_MESSAGE" value="add import.sql, add service" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

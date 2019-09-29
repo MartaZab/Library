@@ -3,6 +3,7 @@ package servlets;
 import book.Book;
 import org.hibernate.ObjectNotFoundException;
 import org.hibernate.tool.schema.Action;
+import services.AuthorService;
 import services.BookService;
 import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
@@ -12,13 +13,13 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.io.ObjectStreamException;
 import java.util.ArrayList;
 import java.util.List;
 
 @WebServlet("/HomeServlet")
 public class HomeServlet extends HttpServlet {
     private BookService bookService = new BookService();
+    private AuthorService authorService = new AuthorService();
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException, NotImplementedException {
 // w post musimy uzyskac 2 informacje - jaki przycisk byl klikniety i jaki id ksiazki wybrany zeby przekierowac do innych widokow
@@ -49,7 +50,7 @@ Long idBook = Long.valueOf(request.getParameter("idBook"));
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 //get pobieramy liste ksiazek z bazy danych i przekazac do index.jsp
         List<Book> books = new ArrayList<Book>();
-        request.getRequestDispatcher("index.jsp").forward(request, response);
+
     }
 }
 

@@ -1,5 +1,6 @@
 <html>
 <head>
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 </head>
 
@@ -23,8 +24,9 @@
         </tr>
         </thead>
         <tbody>
+
         <tr>
-            <td>1</td>
+            <td>title</td>
             <td>Pan Tadeusz</td>
             <td>1234-56-456-23</td>
             <td>Adam Mickiewicz</td>

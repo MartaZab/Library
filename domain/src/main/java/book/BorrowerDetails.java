@@ -17,7 +17,7 @@ public class BorrowerDetails implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id_borrower_details", length = 20)
+    @Column(name = "borrower_details_id", length = 20)
     private Long idBorrowerDetails;
 
     @Column(name = "address", nullable = false, length = 40)
@@ -31,4 +31,5 @@ public class BorrowerDetails implements Serializable {
 
     @OneToOne(mappedBy = "details")
     private Borrower borrower;
+
 }
