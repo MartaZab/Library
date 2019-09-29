@@ -1,14 +1,18 @@
 package book;
 
-import lombok.Getter;
+import lombok.*;
 
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.List;
 
-@Getter
 @Entity
 @Table(name = "author")
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
 public class Author implements Serializable {
 
     @Id

@@ -8,13 +8,13 @@ import javax.persistence.EntityTransaction;
 public abstract class GenericDao<T, K> {
 
     protected final EntityManager em;
-    protected final Class<T> entityClass;
+    private final Class<T> entityClass;
 
     @SuppressWarnings("unchecked")
-    protected GenericDao() {
+    GenericDao() {
         ParameterizedType genericSuperclass = (ParameterizedType) getClass().getGenericSuperclass();
         this.entityClass = (Class<T>) genericSuperclass.getActualTypeArguments()[0];
-        this.em = EntityManagerUtil.;
+        this.em = EntityManagerUtil.getInstance().getEntityManager();
     }
 
     public void create(T entity) {

@@ -1,4 +1,10 @@
 package repository;
 
-public class BookRepository {
+import book.Book;
+
+public class BookRepository extends GenericDao<Book, Long> {
+
 }
+
+
+

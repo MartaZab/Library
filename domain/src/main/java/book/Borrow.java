@@ -1,16 +1,19 @@
 package book;
 
-import lombok.Getter;
+import lombok.*;
 
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Date;
-import java.util.List;
 
 
-@Getter
 @Entity
 @Table(name = "borrow")
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
 public class Borrow implements Serializable {
 
     @Id

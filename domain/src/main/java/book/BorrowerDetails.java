@@ -1,14 +1,18 @@
 package book;
 
-import lombok.Getter;
+import lombok.*;
 
 import javax.persistence.*;
 import java.io.Serializable;
 
 
-@Getter
 @Entity
 @Table(name = "borrower_details")
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
 public class BorrowerDetails implements Serializable {
 
     @Id
