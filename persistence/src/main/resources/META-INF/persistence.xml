@@ -13,7 +13,7 @@
             <class>book.Borrower</class>
             <class>book.BorrowerDetails</class>
             <properties>
-                <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/company?serverTimezone=UTC" />
+                <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/library?serverTimezone=UTC" />
                 <property name="javax.persistence.jdbc.user" value="root" />
                 <property name="javax.persistence.jdbc.password" value="pinokio10" />
                 <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver" />

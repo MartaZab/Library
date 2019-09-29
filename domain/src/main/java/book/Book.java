@@ -48,7 +48,7 @@ public class Book implements Serializable {
     @JoinColumn(name = "author_id")
     private Author author;
 
-    @OneToMany(mappedBy = "borrow")
+    @OneToMany(mappedBy = "book")
     private List<Borrow> borrows;
 
 

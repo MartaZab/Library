@@ -7,6 +7,7 @@ import javax.persistence.Persistence;
 public class EntityManagerUtil {
 
     private EntityManagerFactory factory = Persistence.createEntityManagerFactory("examplePersistenceUnit");
+    private EntityManager entityManager = null;
     private static EntityManagerUtil instance;
 
     private EntityManagerUtil() {
@@ -20,6 +21,9 @@ public class EntityManagerUtil {
     }
 
     public EntityManager getEntityManager() {
-        return factory.createEntityManager();
+        if (entityManager == null) {
+            entityManager = factory.createEntityManager();
+        }
+        return entityManager;
     }
 }

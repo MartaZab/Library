@@ -26,7 +26,10 @@
                 <label for="inputCategory">Category</label>
                 <select id="inputCategory" class="form-control">
                     <option selected>Choose...</option>
-                    <option>...</option>
+                    <option>History</option>
+                    <option>Fantasy</option>
+                    <option>Drama</option>
+                    <option>SF</option>
                 </select>
             </div>
             <div class="form-group col-md-6">
@@ -41,14 +44,24 @@
                 <label for="inputPages">Pages</label>
                 <input type="number" class="form-control" id="inputPages">
             </div>
-
+            <div class="form-group col-md-6">
+                <label for="inputAuthor">Author</label>
+                <select id="inputAuthor" class="form-control">
+                    <option selected>Choose...</option>
+                    <option>...</option>
+                    <option>Adam Mickiewicz</option>
+                    <option>Juliusz Słowacki</option>
+                    <option>Eliza Orzeszkowa</option>
+                    <option>Witold Gombrowicz</option>
+                    <option>Aleksander Fredro</option>
+                </select>
+            </div>
             <div class="form-group col-md-12">
                 <label for="inputSummary">Summary</label>
                 <input type="text" class="form-control" id="inputSummary">
             </div>
         </div>
     </form>
-
 
     <button type="submit" class="btn btn-warning" >Edit</button>
     <a href="index.jsp"><button type="button" class="btn btn-secondary">Cancel</button></a>
